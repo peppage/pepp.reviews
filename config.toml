@@ -1,0 +1,23 @@
+baseURL = "https://pepp.reviews/"
+languageCode = "en-us"
+title = "Pepp's Indie Game Reviews"
+theme = "sanctum"
+googleAnalytics = ""
+
+[params]
+    logo = ""
+    youtube = "https://youtube.com/peppage"
+    twitter = "https://twitter.com/peppage"
+    footer = "I made this mess!"
+
+[taxonomies]
+    type = "types"
+    game = "games"
+    tag = "tags"
+
+[privacy]
+    [privacy.googleAnalytics]
+        anonymizeIP = true
+        disable = false
+        respectDoNotTrack = true
+        useSessionStorage = false
