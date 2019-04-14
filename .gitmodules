@@ -1,0 +1,3 @@
+[submodule "themes/sanctum"]
+	path = themes/sanctum
+	url = git@github.com:peppage/sanctum.git
