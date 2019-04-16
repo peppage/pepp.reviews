@@ -2,7 +2,7 @@ baseURL = "https://pepp.reviews/"
 languageCode = "en-us"
 title = "Pepp's Indie Game Reviews"
 theme = "sanctum"
-googleAnalytics = ""
+googleAnalytics = "UA-93948508-2"
 
 [params]
     logo = ""
