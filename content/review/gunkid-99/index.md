@@ -5,7 +5,7 @@ resources:
   - name: 'level-select'
     src: 'img/level-select.jpg'
 
-title: 'Gunkid 99'
+title: 'Gunkid 99 Review'
 date: '2019-03-13T23:30:54-04:00'
 draft: false
 cover: 'img/cover.jpg'

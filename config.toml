@@ -6,9 +6,11 @@ googleAnalytics = "UA-93948508-2"
 
 [params]
     logo = ""
-    youtube = "https://youtube.com/peppage"
-    twitter = "https://twitter.com/peppage"
     footer = "I made this mess!"
+
+[social]
+    youtube = "peppage"
+    twitter = "peppage"
 
 [taxonomies]
     type = "types"

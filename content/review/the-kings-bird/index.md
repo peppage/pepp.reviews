@@ -5,7 +5,7 @@ resources:
   - name: 'redj'
     src: 'img/red-jump.jpg'
 
-title: "The King's Bird"
+title: "The King's Bird Review"
 date: '2019-04-03T17:23:07-04:00'
 draft: false
 cover: 'img/cover.jpg'

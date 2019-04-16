@@ -3,7 +3,7 @@ resources:
   - name: 'messy'
     src: 'img/messy.jpg'
 
-title: 'E.T. Armies'
+title: 'E.T. Armies Review'
 date: '2019-04-15T22:52:16-04:00'
 draft: false
 cover: 'img/cover.jpg'

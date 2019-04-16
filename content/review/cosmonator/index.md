@@ -3,7 +3,7 @@ resources:
   - name: 'select'
     src: 'img/level-select.jpg'
 
-title: 'Cosmonator'
+title: 'Cosmonator Review'
 date: '2019-04-12T01:10:13-04:00'
 draft: false
 cover: 'img/cover.jpg'

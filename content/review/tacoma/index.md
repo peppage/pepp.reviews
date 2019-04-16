@@ -3,7 +3,7 @@ resources:
   - name: 'ferrier'
     src: 'img/ferrier.jpg'
 
-title: 'Tacoma'
+title: 'Tacoma Review'
 date: '2019-04-14T17:01:02-04:00'
 draft: false
 cover: 'img/cover.jpg'
