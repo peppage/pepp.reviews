@@ -10,7 +10,7 @@ cover: 'img/cover.jpg'
 developer: 'Fullbright'
 release: 'Aug 1, 2017'
 price: '$19.99'
-played: '2.5 hours'
+played: '2.5 hours (complete)'
 liked: "Great writing that's captivative! Felt like I knew the characters."
 disliked: 'Nothing!'
 types: ['Narrative Focused']
