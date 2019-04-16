@@ -17,7 +17,7 @@ liked: 'Beautiful visuals, loved the look of the game.'
 disliked: 'Controls are meh. Limits the fun flying aspect.'
 types: ['Platformer']
 games: ["The King's Bird"]
-tags: []
+tags: ['Action', 'Time Attack']
 summary: 'Striking visuals but lackluster controls hurt it badly. Your movement is restricted too! You must find the exact way the devs wanted you to progress through a section.'
 ---
 

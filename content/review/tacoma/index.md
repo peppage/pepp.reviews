@@ -15,7 +15,7 @@ liked: "Great writing that's captivative! Felt like I knew the characters."
 disliked: 'Nothing!'
 types: ['Narrative Focused']
 games: ['Tacoma']
-tags: []
+tags: ['Walking Simulator', 'Story Rich', 'Sci-fi']
 summary: "Sure, it's a walking sim. But, it's a far cry from others in the genre."
 ---
 

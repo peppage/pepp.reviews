@@ -15,7 +15,7 @@ liked: 'Upgrade system is solid and provides a lot of depth.'
 disliked: 'Gameplay could be friendlier to the player with indicators for ships coming onto the screen and consistent debris.'
 types: ['Schmup']
 games: ['Cosmonator']
-tags: []
+tags: ['Bullet Hell', 'Action']
 summary: "Cosmonator is an old school style schmup with an advanced upgrade system that makes the game fun! It's also great that you are locked into upgrades and can't collect them all. This way you have to make tough decisions and replay the game to see everything."
 ---
 
