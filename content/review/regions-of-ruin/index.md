@@ -16,7 +16,7 @@ disliked: 'Rough and grindy. Very unbalanced.'
 types: ['RPG']
 games: ['Regions of Ruin']
 tags: ['Action', 'Strategy']
-summary: 'Very simple on all fronts but draws you in with a ton of stuff to do. Can be too grindy!'
+summary: "Simple but has many mechanics you can't help but get stuck in the game loop. However, it's rough and it can feel grindy. Frustrating that enchanting is pointless & I was invincible by end."
 ---
 
 Regions of Ruin attempts to combine so many game ideas. Base building, node exploration, combat, and crafting just to name a few. You won't be doing to same thing for very long, the game has you switching context so many times. Initial this is tedious but as the game grows , and you have more to do, it's enough to hold your attention. Regions of Ruin held my attention for way longer than I expected. So while the game has issues, like pacing, there's still enough here for a compelling game loop.
