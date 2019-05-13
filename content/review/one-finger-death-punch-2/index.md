@@ -1,17 +1,18 @@
 ---
-title: 'One Finger Death Punch 2'
-date: '2019-04-18T21:19:53-04:00'
-draft: true
+title: 'One Finger Death Punch 2 Review'
+date: '2019-04-22T10:19:53-04:00'
+draft: false
 cover: 'img/cover.jpg'
-developer: ''
-release: ''
-price: ''
-played: 'hours'
-liked: ''
-disliked: ''
-types: []
-games: []
-tags: []
+developer: 'Silver Dollar Games'
+release: 'Apr 15, 2019'
+price: '$7.99'
+played: '8 hours'
+liked: 'The brilliant mechanics still hold up and feel better than ever! Gauntlet mode is a great addition.'
+disliked: "Hasn't changed much over the years. Plays exactly the same as the first."
+types: ['Action']
+games: ['One Finger Death Punch 2']
+tags: ['Casual', "Beat'em up"]
+summary: "More of the same which at this point is a good thing, it's been 5 years since the last game!"
 ---
 
 I'm having seriously conflicting feelings about One Finger Death Punch two. Much more than I expected. Its made writing this review quite difficult. Especially since the first game holds a special place in my heart. I played that game for nineteen hours five years ago! Wow! That's before I started making YouTube videos. Although not that far off, my first gaming video was later that year in October.
@@ -23,6 +24,8 @@ For the uninitiated let's cover the basics. One Finger Death Punch is straightfo
 Side note, I love how the game adjusts itself to how well you're doing. If you're absolutely killing it then the speed increases and the game gets harder. Really nice for those off days or hard levels so you can get past. The idea isn't to bring the pain but you can if you want, just adjust the speed manually in the settings.
 
 While One Finger Death Punch looks very simple there's actually some nuance to the combat. I like to play in a way so I don't waste anything and try and conserve my fingers. What I mean is trying to take out the most difficult enemies the easiest way possible. For example, if I have a throwing star do I want to use it on a simple white enemy that dies in one hit or that mini-boss that's going to give me a lot more trouble? If I use it on the mini-boss then I don't have to do the whole complex button clicking mechanic. It's the most efficient play and as you get better you'll start seeing a ton of these ways to make it easier on yourself. This is important when you're nine hundred enemies deep in survival mode! Fighting a prolonged engagement with your nemesis can be risky.
+
+{{< youtube gbSV2JTjD74 >}}
 
 But, it's not only punching dudes. There's all kinds of variety! Between weapons, skills, bosses, and the levels are constantly changing.
 
