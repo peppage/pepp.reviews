@@ -1,17 +1,18 @@
 ---
-title: 'Eastshade'
+title: 'Eastshade Review'
 date: '2019-04-21T00:25:00-04:00'
-draft: true
+draft: false
 cover: 'img/cover.jpg'
-developer: ''
-release: ''
-price: ''
-played: 'hours'
-liked: ''
-disliked: ''
-types: []
-games: []
-tags: []
+developer: 'Eastshade Studios'
+release: 'Feb 13, 2019'
+price: '$24.99'
+played: '13 hours'
+liked: 'SO much beautiful exploration and interesting characters. Your paintings always look good!'
+disliked: 'Nothing.'
+types: ['Narrative focused']
+games: ['Eastshade']
+tags: ['Exploration', 'Relaxing', 'Open World']
+summary: 'Loved Eastshade! Just hanging out in this world is a pleasure because it was crafted so well. Each corner holds something, a beautiful view or quest that you have to check out.'
 ---
 
 Welcome to Eastshade, a delightful place where everyone is so kind. Hanging out here is comfortable and relaxing. Like a nice cup of warm tea on a chilly Saturday. A genuine and heartfelt game that I loved. I mean the point of the game is to make four paintings for your mother's memory. It just happens that Eastshade is so inviting and a great place to explore.
@@ -27,6 +28,8 @@ Here's an example of exploring the town and going down all the way down this pat
 So you're an artist, a painter. The game makes it easy to paint a scene. Pick the framing and away you go, this isn't a painting game. The game handles it all for you which I like. So you're going to be getting a lot of requests to make art. For example, you're tasked with painting a sandy beach to trade for a recipe. With no directions where the sandy beach is you will need to explore the world to find it. Go find that beach!
 
 For example here's me painting the beautiful Nava skyline with this cute couple sitting here enjoying the view. You can easily adjust what size you want the painting to be and then you press a button and it gets painted. Magically it ends up being a beautiful rendition of the scene.
+
+{{< youtube KtOqwZap3WE >}}
 
 Now, you can't paint whenever you want. You need the inspiration. This is a resource you have to manage in the game but it's not stressful. I like the mechanic because it fits the game but it's unneeded. Still, I can't imagine the game without it. You get more inspiration for finding new areas and reading books. So, it does force the player to seek new areas but if you're playing the game you're going to be doing that.
 
