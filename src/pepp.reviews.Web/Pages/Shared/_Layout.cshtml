@@ -4,10 +4,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"]</title>
-    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4/css/tachyons.min.css">
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
+    <header class="sans-serif">
+    <div class="cover bg-left bg-center-l" style="background-image: url(/images/YouTube_Banner.jpg);height:450px;">
+        <img src="/images/me.png" style="height:400px;position:absolute;top:50px;right:0;"/>
+    </div> 
+    </header>
     <div class="container">
         <main role="main">
             @RenderBody()
