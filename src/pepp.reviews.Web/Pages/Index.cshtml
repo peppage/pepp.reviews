@@ -4,12 +4,12 @@
     ViewData["Title"] = "Pepp's Indie Game Reviews";
 }
 
-<div class="flex">
+<div class="flex mt4">
   <div class="w-50 pa3 mr2 tr">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/1kkvZQW90sM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
   <div class="w-50 pa3 mr2 tl">
-    <h1>Dedicated to finding indie games worth playing</h1>
+    <h2>Dedicated to finding indie games worth playing</h2>
     <div class="pa4">
     <blockquote class="athelas ml0 mt0 pl4 black-90 bl bw2 b--blue">
         <p class="f5 f4-m f3-l lh-copy measure mt0">
@@ -21,6 +21,23 @@
     <a class="f6 link dim ph3 pv2 mb2 dib white bg-red" href="#0">Subscribe</a>
   </div>
 </div>
-<div class="flex">
-    
+
+<div class="flex mt4">
+    <h2>The Latest Videos</h2>
+    @foreach (var video in Model.Videos)
+    {
+        <div class="w-25">
+            <a href="@video.Link">
+                <img src="@video.ThumbnailUrl" />
+            </a>
+        </div>
+    }
+</div>
+
+<div class="flex items-center justify-center pa4 mt4 white" style="background-color:#202020;">
+    <div>
+        <img class="v-mid" src="https://steamstore-a.akamaihd.net/public/shared/images/header/globalheader_logo.png" />
+        <span class="lh-title ml3 mr5">Follow along on my updated Steam Curator page.</span>
+        <a class="f6 link dim ba ph3 pv2 mb2 dib white" href="https://store.steampowered.com/curator/26701155-The-Pepp-Selection/">Follow</a>
+    </div>
 </div>
