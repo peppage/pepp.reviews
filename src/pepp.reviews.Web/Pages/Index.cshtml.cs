@@ -25,7 +25,7 @@ namespace pepp.reviews.Web.Pages
             _cache = memoryCache;
         }
 
-        public async void OnGetAsync()
+        public async Task OnGetAsync()
         {
             List<Video> cacheEntry;
 
