@@ -21,20 +21,6 @@
     </div>
 </div>
 
-<div class="mt4 mw9 ml-auto mr-auto pl3 pr3">
-    <h2 class="f2 georgia">Latest Videos</h2>
-    <div class="flex flex-wrap">
-        @foreach (var video in Model.Videos.Take(9))
-        {
-            <div class="w-50 w-25-l pa3">
-                <a href="@video.Link" aria-label="Link to youtube video @video.Title">
-                    <img src="https://img.youtube.com/vi/@video.VideoId/maxresdefault.jpg" alt="Youtube thumbnail for @video.Title" />
-                </a>
-            </div>
-        }
-    </div>
-</div>
-
 <div class="pa3 mt4 white" style="background-color:#202020;">
     <div class="dt mw6 center pv3">
         <div class="dtc v-mid">
@@ -52,6 +38,22 @@
         </div>
     </div>
 </div>
+
+<div class="mt4 mw9 ml-auto mr-auto pl3 pr3">
+    <h2 class="f2 georgia">Latest Videos</h2>
+    <div class="flex flex-wrap">
+        @foreach (var video in Model.Videos.Take(9))
+        {
+            <div class="w-50 w-25-l pa3">
+                <a href="@video.Link" aria-label="Link to youtube video @video.Title">
+                    <img src="https://img.youtube.com/vi/@video.VideoId/maxresdefault.jpg" alt="Youtube thumbnail for @video.Title" />
+                </a>
+            </div>
+        }
+    </div>
+</div>
+
+
 
 <div class="mt4 mw9 ml-auto mr-auto pl3 pr3">
     <h2 class="f2 georgia">Contact</h2>
