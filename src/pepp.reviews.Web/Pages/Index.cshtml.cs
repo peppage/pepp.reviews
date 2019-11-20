@@ -14,7 +14,7 @@ namespace pepp.reviews.Web.Pages
 {
     public class IndexModel : PageModel
     {
-        private IMemoryCache _cache;
+        private readonly IMemoryCache _cache;
         private static string FeedCacheKey => "_Feed";
         private readonly ILogger<IndexModel> _logger;
         public List<Video> Videos { get; set; }
@@ -39,7 +39,7 @@ namespace pepp.reviews.Web.Pages
                     cacheEntry.Add(VideoMapper.XElementToVideo(item.Element));
                 }
                 var cacheEntryOptions = new MemoryCacheEntryOptions()
-                    .SetSlidingExpiration(TimeSpan.FromDays(3));
+                    .SetAbsoluteExpiration(TimeSpan.FromDays(3));
 
                 _cache.Set(FeedCacheKey, cacheEntry, cacheEntryOptions);
             }
