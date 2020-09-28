@@ -11,6 +11,7 @@ use actix_web::middleware::errhandlers::{ErrorHandlerResponse, ErrorHandlers};
 use actix_web::{web, App, HttpResponse, HttpServer, Result};
 
 use atom_syndication::Feed;
+use cached::proc_macro::cached;
 use handlebars::Handlebars;
 use serde::ser::{Serialize, SerializeStruct, Serializer};
 
@@ -38,31 +39,7 @@ impl Serialize for Video {
 
 #[get("/")]
 async fn index(hb: web::Data<Handlebars<'_>>) -> HttpResponse {
-    let mut videos: Vec<Video> = Vec::new();
-
-    let feed = match get_videos().await {
-        Ok(f) => f,
-        Err(error) => panic!("failed to get feed: {:?}", error),
-    };
-
-    for entry in feed.entries() {
-        let link = entry.links().first().unwrap();
-        let youtube = entry.extensions().get("yt").unwrap();
-        let id = match youtube.get("videoId").unwrap().first().unwrap().value() {
-            Some(i) => i,
-            None => "",
-        };
-
-        let video = Video {
-            id: id.to_owned(),
-            title: entry.title().to_owned(),
-            url: link.href().to_owned(),
-        };
-
-        videos.push(video);
-    }
-
-    let data = json!({ "videos": videos });
+    let data = json!({ "videos": get_videos() });
     let body = hb.render("index", &data).unwrap();
 
     HttpResponse::Ok().body(body)
@@ -137,7 +114,35 @@ fn get_error_response<B>(res: &ServiceResponse<B>, error: &str) -> Response<Body
     }
 }
 
-async fn get_videos() -> Result<Feed, Box<dyn Error>> {
+async fn get_videos() -> Result<Vec<Video>, Box<dyn Error>> {
+    let mut videos: Vec<Video> = Vec::new();
+
+    let feed = match get_feed().await {
+        Ok(f) => f,
+        Err(error) => panic!("failed to get feed: {:?}", error),
+    };
+
+    for entry in feed.entries() {
+        let link = entry.links().first().unwrap();
+        let youtube = entry.extensions().get("yt").unwrap();
+        let id = match youtube.get("videoId").unwrap().first().unwrap().value() {
+            Some(i) => i,
+            None => "",
+        };
+
+        let video = Video {
+            id: id.to_owned(),
+            title: entry.title().to_owned(),
+            url: link.href().to_owned(),
+        };
+
+        videos.push(video);
+    }
+    Ok(videos)
+}
+
+#[cached(result = true, time = 259200)]
+async fn get_feed() -> Result<Feed, Box<dyn Error>> {
     let content = reqwest::get(
         "https://www.youtube.com/feeds/videos.xml?channel_id=UCmkCPjKpngDHZp0orr7GuGA",
     )
