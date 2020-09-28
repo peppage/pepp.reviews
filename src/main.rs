@@ -4,11 +4,12 @@ extern crate actix_web;
 #[macro_use]
 extern crate serde_json;
 
+use actix_files::Files;
 use actix_http::{body::Body, Response};
 use actix_web::dev::ServiceResponse;
 use actix_web::http::StatusCode;
 use actix_web::middleware::errhandlers::{ErrorHandlerResponse, ErrorHandlers};
-use actix_web::{web, App, HttpResponse, HttpServer, Result};
+use actix_web::{middleware, web, App, HttpResponse, HttpServer, Result};
 
 use atom_syndication::Feed;
 use cached::proc_macro::cached;
@@ -39,7 +40,16 @@ impl Serialize for Video {
 
 #[get("/")]
 async fn index(hb: web::Data<Handlebars<'_>>) -> HttpResponse {
-    let data = json!({ "videos": get_videos() });
+    let videos = match get_videos().await {
+        Ok(v) => v,
+        Err(err) => {
+            println!("Error getting vids {:?}", err);
+            // Don't crash the page if there's an error
+            Vec::new()
+        }
+    };
+
+    let data = json!({ "videos": videos });
     let body = hb.render("index", &data).unwrap();
 
     HttpResponse::Ok().body(body)
@@ -60,7 +70,9 @@ async fn main() -> io::Result<()> {
         App::new()
             .wrap(error_handlers())
             .app_data(handlebars_ref.clone())
+            .wrap(middleware::Compress::default())
             .service(index)
+            .service(Files::new("/images", "src/static/images/"))
     })
     .bind("127.0.0.1:8080")?
     .run()
@@ -119,7 +131,7 @@ async fn get_videos() -> Result<Vec<Video>, Box<dyn Error>> {
 
     let feed = match get_feed().await {
         Ok(f) => f,
-        Err(error) => panic!("failed to get feed: {:?}", error),
+        Err(error) => return Err(error),
     };
 
     for entry in feed.entries() {

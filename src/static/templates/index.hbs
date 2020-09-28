@@ -45,10 +45,14 @@
             </div>
             <div class="w-100 pa3 tc tr-l w-50-l">
                 <div class="video-container">
-                    <iframe width="560" height="315" title="Introduction to my channel"
-                        src="https://www.youtube.com/embed/Z9TGPC8_Crk" frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+
+
+
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Z9TGPC8_Crk"
+                        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/Z9TGPC8_Crk?autoplay=1><img src=https://img.youtube.com/vi/Z9TGPC8_Crk/hqdefault.jpg alt='Introduction to my channel'><span>▶</span></a>"
+                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen title="Introduction to my channel"></iframe>
+
                 </div>
             </div>
         </div>
@@ -79,7 +83,7 @@
                 {{#each videos as |video|}}
                 <div class="w-50 w-25-l pa3">
                     <a href="{{video.url}}" aria-label="Link to youtube video {{video.title}}">
-                        <img src="https://img.youtube.com/vi/{{video.id}}/maxresdefault.jpg"
+                        <img src="https://img.youtube.com/vi/{{video.id}}/hqdefault.jpg"
                             alt="Youtube thumbnail for {{video.title}}" />
                     </a>
                 </div>
