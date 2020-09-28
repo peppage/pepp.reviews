@@ -31,7 +31,7 @@
 <body>
     <header class="sans-serif">
         <div class="cover bg-center vh-25" style="background-image: url(/images/YouTube_Banner.webp);">
-            <img src="/images/me.webp" style="right:0;" class="dn db-m db-l vh-25 absolute" alt="" />
+            <img src="/images/me.webp" style="right:0;" class="dn db-m db-l vh-25 absolute" alt="" loading="lazy" />
         </div>
     </header>
     <main role="main" class="avenir">
@@ -45,9 +45,6 @@
             </div>
             <div class="w-100 pa3 tc tr-l w-50-l">
                 <div class="video-container">
-
-
-
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/Z9TGPC8_Crk"
                         srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/Z9TGPC8_Crk?autoplay=1><img src=https://img.youtube.com/vi/Z9TGPC8_Crk/hqdefault.jpg alt='Introduction to my channel'><span>▶</span></a>"
                         frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -60,8 +57,7 @@
         <div class="pa3 mt4 white" style="background-color:#202020;">
             <div class="dt mw6 center pv3">
                 <div class="dtc v-mid">
-                    <img src="https://steamstore-a.akamaihd.net/public/shared/images/header/globalheader_logo.png"
-                        alt="" />
+                    <img src="images/globalheader_logo.webp" alt="" loading="lazy" />
                 </div>
                 <div class="dtc v-mid pl3">
                     <p class="lh-copy">
@@ -83,8 +79,8 @@
                 {{#each videos as |video|}}
                 <div class="w-50 w-25-l pa3">
                     <a href="{{video.url}}" aria-label="Link to youtube video {{video.title}}">
-                        <img src="https://img.youtube.com/vi/{{video.id}}/hqdefault.jpg"
-                            alt="Youtube thumbnail for {{video.title}}" />
+                        <img src="https://img.youtube.com/vi/{{video.id}}/mqdefault.jpg"
+                            alt="Youtube thumbnail for {{video.title}}" loading="lazy" />
                     </a>
                 </div>
                 {{/each}}

@@ -74,7 +74,7 @@ async fn main() -> io::Result<()> {
             .service(index)
             .service(Files::new("/images", "src/static/images/"))
     })
-    .bind("127.0.0.1:8080")?
+    .bind("127.0.0.1:8004")?
     .run()
     .await
 }
