@@ -21,7 +21,6 @@ struct Video {
     id: String,
     title: String,
     url: String,
-    thumbnail: String,
 }
 
 impl Serialize for Video {
@@ -48,21 +47,6 @@ async fn index(hb: web::Data<Handlebars<'_>>) -> HttpResponse {
 
     for entry in feed.entries() {
         let link = entry.links().first().unwrap();
-        let media = entry.extensions().get("media").unwrap();
-
-        let media_group = media.get("group").unwrap().first().unwrap();
-        let thumb = media_group
-            .children()
-            .get("thumbnail")
-            .unwrap()
-            .first()
-            .unwrap();
-
-        let thumb_url = match thumb.attrs().get("url").map(String::as_str) {
-            Some(t) => t,
-            None => "",
-        };
-
         let youtube = entry.extensions().get("yt").unwrap();
         let id = match youtube.get("videoId").unwrap().first().unwrap().value() {
             Some(i) => i,
@@ -73,7 +57,6 @@ async fn index(hb: web::Data<Handlebars<'_>>) -> HttpResponse {
             id: id.to_owned(),
             title: entry.title().to_owned(),
             url: link.href().to_owned(),
-            thumbnail: thumb_url.to_owned(),
         };
 
         videos.push(video);
