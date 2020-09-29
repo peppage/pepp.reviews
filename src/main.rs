@@ -62,7 +62,7 @@ async fn main() -> io::Result<()> {
     // Application Builder as an atomic reference-counted pointer.
     let mut handlebars = Handlebars::new();
     handlebars
-        .register_templates_directory(".hbs", "./src/static/templates")
+        .register_templates_directory(".hbs", "./static/templates")
         .unwrap();
     let handlebars_ref = web::Data::new(handlebars);
 
@@ -72,7 +72,7 @@ async fn main() -> io::Result<()> {
             .app_data(handlebars_ref.clone())
             .wrap(middleware::Compress::default())
             .service(index)
-            .service(Files::new("/images", "src/static/images/"))
+            .service(Files::new("/images", "./static/images/"))
     })
     .bind("127.0.0.1:8004")?
     .run()
