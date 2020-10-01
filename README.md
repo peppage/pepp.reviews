@@ -1,17 +1,10 @@
 # Pepp.reviews website
 
-Simple site but wanted something if people wanted to look me up. Also it's kinda nice
-it automatically updates the videos I release.
-
-Also, it's my first rust program and I wanted to dip my toes in with
-a real project but a simple one. It was fun!
-
-## Future
-
-If I was really smart this would output a static page created by a
-nightly job. Then it could be served by nginx.
+One page static site generator which lists my videos. Wanted to create
+something which loaded very fast.
 
 ## Other version
 
+- [Rust](https://github.com/peppage/pepp.reviews/tree/rust)
 - [C#](https://github.com/peppage/pepp.reviews/tree/csharp)
 - [Hugo](https://github.com/peppage/pepp.reviews/tree/hugo)
