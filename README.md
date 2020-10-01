@@ -8,8 +8,8 @@ a real project but a simple one. It was fun!
 
 ## Future
 
-If I was really smart this would output a simple static page that chron
-could update every night. Then it could be served simply by nginx.
+If I was really smart this would output a static page created by a
+nightly job. Then it could be served by nginx.
 
 ## Other version
 
