@@ -22,7 +22,6 @@ namespace Generator
                 .AddJsonFile($"appsettings.json", false)
                 .Build();
 
-            // Once it builds with these settings they are not read from the config again.
             var feedUrl = config["feed"];
             var location = config["location"];
 
